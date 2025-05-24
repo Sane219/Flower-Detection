@@ -1,6 +1,6 @@
 # 🌸 Flower Recognition using CNN
 
-This project is a deep learning-based flower classification model built with TensorFlow and Keras. It can classify flower images into five categories using a Convolutional Neural Network (CNN) architecture.
+This project is a deep learning-based flower classification model built with TensorFlow and Keras. It classifies flower images into five categories using a Convolutional Neural Network (CNN).
 
 ## 🧠 Model Overview
 
@@ -13,29 +13,42 @@ This project is a deep learning-based flower classification model built with Ten
 
 ## 🗂 Dataset
 
-- Assumes a directory structure like:  
-  `/path/to/flowers/<class_name>/<image>.jpg`
+The dataset is available on Kaggle:  
+🔗 [Flowers Recognition Dataset](https://www.kaggle.com/datasets/alxmamaev/flowers-recognition?resource=download)
 
-Images are loaded, resized, and normalized before training. Labels are one-hot encoded using `LabelEncoder`.
+### 📥 Download Instructions
+
+1. Download the dataset manually from the link above (requires a Kaggle account).
+2. Extract the dataset and move the `flowers` folder to the following location:
+
+/content/drive/MyDrive/Flower Detection/flowers
+
+bash
+Copy
+Edit
+
+> This path is referenced directly in the notebook (`Untitled0.ipynb`). You may adjust it in the code if using a different setup.
 
 ## 🚀 How to Run
 
 1. Clone this repo:
    ```bash
-   git clone https://github.com/your-username/flower-recognition-cnn.git
+   git clone https://github.com/sane206/flower-recognition-cnn.git
    cd flower-recognition-cnn
-Set your dataset path in the notebook:
+Ensure the dataset is placed at the specified path.
 
-python
+Open and run the notebook:
+
+bash
 Copy
 Edit
-folder_dir = '/content/drive/MyDrive/Flower Detection/flowers'
-Run the Jupyter Notebook (Untitled0.ipynb) in your preferred environment (Google Colab, Jupyter, etc.).
+jupyter notebook Untitled0.ipynb
+Or run it in Google Colab for GPU support.
 
 🏆 Results
-Achieves good classification accuracy after training for 64 epochs.
+Achieves strong classification accuracy after training for 64 epochs.
 
-Includes visualization of correct vs incorrect predictions with class labels.
+Includes side-by-side visualizations of true vs predicted labels.
 
 🛠 Libraries Used
 TensorFlow / Keras
@@ -47,4 +60,9 @@ OpenCV
 Matplotlib
 
 Scikit-learn
+
+📬 Contact
+For questions, suggestions, or contributions, feel free to open an issue or a pull request.
+
+GitHub: sane206
 
